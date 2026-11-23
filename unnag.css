@@ -1,0 +1,12 @@
+/* ZRL Cloud-Nag Suppressor v1.2.0 - ZRoles Labs - MIT
+   Hides the TP-Link cloud / TP-Link ID popup on Archer router admin pages.
+   Firmware 1.0.x: #cloud-login-msg and its click-blocking mask (#global-mask.cloud-login-msg).
+   Firmware 1.1.x: "Get TP-Link Cloud Service" popup = su-dialog with class cloud-dialog.
+   Masks are hidden only while the cloud popup exists, so other router dialogs keep working. */
+#cloud-login-msg,
+#global-mask.cloud-login-msg,
+.cloud-dialog,
+:has(> .cloud-dialog),
+.su-modal:has(.cloud-dialog),
+body:has(.cloud-dialog) .su-modal-mask { display: none !important; }
+body:has(.cloud-dialog) { overflow: auto !important; }

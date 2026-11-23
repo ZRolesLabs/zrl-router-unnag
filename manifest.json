@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "ZRL Cloud-Nag Suppressor (TP-Link Archer)",
+  "short_name": "ZRL Un-Nag",
+  "version": "1.2.0",
+  "description": "Hides the TP-Link cloud / TP-Link ID popup on Archer router admin pages. CSS only: no scripts, no permissions, no network.",
+  "author": "ZRoles Labs",
+  "homepage_url": "https://github.com/ZRolesLabs/zrl-router-unnag",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    },
+    "default_title": "ZRL Cloud-Nag Suppressor: active on your router admin page"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://tplinkwifi.net/*",
+        "https://tplinkwifi.net/*",
+        "http://192.168.0.1/*",
+        "https://192.168.0.1/*",
+        "http://192.168.1.1/*",
+        "https://192.168.1.1/*"
+      ],
+      "css": [
+        "unnag.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
