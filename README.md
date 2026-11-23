@@ -4,7 +4,7 @@
 <p align="center"><b>Make the TP-Link cloud login popup go away on your Archer router's admin page.</b><br>
 A ZRoles Labs project. CSS only. No scripts, no permissions, no network.</p>
 
-<p align="center"><a href="../../releases/latest"><b>⬇ Download the latest release</b></a></p>
+<p align="center"><a href="https://github.com/ZRolesLabs/zrl-router-unnag/archive/refs/heads/main.zip"><b>⬇ Download (zip)</b></a></p>
 
 ---
 
