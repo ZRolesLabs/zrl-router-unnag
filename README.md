@@ -1,8 +1,10 @@
-<p align="center"><img src="icons/icon128.png" width="96" alt="ZRL Cloud-Nag Suppressor icon"></p>
+<p align="center"><img src="docs/banner.png" alt="ZRL Cloud-Nag Suppressor: kill the TP-Link cloud nag"></p>
 
 <h1 align="center">ZRL Cloud-Nag Suppressor</h1>
 <p align="center"><b>Make the TP-Link cloud login popup go away on your Archer router's admin page.</b><br>
 A ZRoles Labs project. CSS only. No scripts, no permissions, no network.</p>
+
+<p align="center"><a href="../../releases/latest"><b>⬇ Download the latest release</b></a></p>
 
 ---
 
